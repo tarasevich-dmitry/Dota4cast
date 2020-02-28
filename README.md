@@ -35,3 +35,20 @@ In-game live prediction, base on the situation, networth, heroes,... (TBD)
 Additional features:
 - [ ] Stream player in app (TBD)
 - [ ] Twitch widget (TBD)
+
+Some usefull links:
+- http://www.datdota.com/  - prof dota statistics 
+- https://dota.rgp.io/ - matchmaking stats
+- http://dotascience.com/  - hakaton for prediction dota 2 team winner (2017)
+- https://raygaming.com/   - our concurents, bets+predictions, some sneaky platform
+- https://docs.opendota.com/# - opendota API
+- https://kouch.tv/streams  - some extention for twitch, build-in predictions
+- https://github.com/odota/dotaconstants - some repo?
+- https://www.google.com/search?q=DOTABridge+Web&oq=DOTABridge+Web&aqs=chrome..69i57j0.6121j0j7&sourceid=chrome&ie=UTF-8 - ?
+- https://github.com/uin3566/Dota2Helper - some mobile app (china)
+- https://github.com/pissang/dota2hero - dota hero viewer? 
+- https://github.com/andreiapostoae/dota2-predictor 
+- https://github.com/kevincon/dotaml - dotaml hero recomendation 
+- https://www.kaggle.com/c/dota-2-win-probability-prediction - kaggle win probability prediction
+- https://github.com/xzion/dota2-gsi dota stats integration
+- http://dota.polso.info/ ready web service of predictions 
