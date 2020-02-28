@@ -52,3 +52,4 @@ Some usefull links:
 - https://www.kaggle.com/c/dota-2-win-probability-prediction - kaggle win probability prediction
 - https://github.com/xzion/dota2-gsi dota stats integration
 - http://dota.polso.info/ ready web service of predictions 
+- 
