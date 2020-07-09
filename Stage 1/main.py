@@ -19,7 +19,7 @@ Dota4cast is the key to protect gamblers and improve integrity
 
 image = Image.open('main_img.jpeg')
 #image_suck = Image.open('tenor.gif')
-image_suck=Image.open('tenor.gif').convert('RGB').save('new_tenor.gif')
+#image_suck=Image.open('tenor.gif').convert('RGB').save('new_tenor.gif')
 st.image(image, caption=' ', use_column_width=True)
 
 """
