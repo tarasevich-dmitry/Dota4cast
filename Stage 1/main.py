@@ -10,7 +10,7 @@ from trueskill.backends import cdf
 import io
 
 
-st.title('Dota4cast v.0.3')
+st.title('Dota4cast v.0.3 Beta')
 
 st.write("""
 Dota4cast is the key to protect gamblers and improve integrity
@@ -18,6 +18,8 @@ Dota4cast is the key to protect gamblers and improve integrity
 
 
 image = Image.open('main_img.jpeg')
+#image_suck = Image.open('tenor.gif')
+image_suck=Image.open('tenor.gif').convert('RGB').save('new_tenor.gif')
 st.image(image, caption=' ', use_column_width=True)
 
 """
@@ -59,14 +61,7 @@ if st.checkbox('Show dataframe'):
     st.line_chart(chart_data)
 
 
-"""
-Zhytomyr Dota users
-"""
-map_data = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [50.25, 28.7],
-    columns=['lat', 'lon'])
 
-st.map(map_data)
 
 #Put mmr widgets in a sidebar
 df_mmr = pd.DataFrame({
@@ -87,10 +82,10 @@ df2 = pd.read_csv("selected_team_matches.csv")
 matches_info = pd.read_csv('selected_team_matches.csv').sort_values(['match_id'])
 
 #Get all team names from df
-"""
-Check all available teams for analisys:
-"""
-st.write(matches_info.radiant.unique())
+#"""
+#Check all available teams for analisys:
+#"""
+#st.write(matches_info.radiant.unique())
 
 trueskill.setup(draw_probability=0)
 
@@ -109,29 +104,58 @@ for index, row in matches_info.iterrows():
         Rates[team2], Rates[team1] = trueskill.rate_1vs1(Rates[team2], Rates[team1])
 
 
-#Rates['VP 2']
-
 def win_probability(player_rating, opponent_rating):
     delta_mu = player_rating.mu - opponent_rating.mu
     denom = sqrt(2 * (BETA * BETA) + pow(player_rating.sigma, 2) + pow(opponent_rating.sigma, 2))
     return cdf(delta_mu / denom)
 
 
+
+if st.button('Check all available teams for analisys'):
+    st.write(matches_info.radiant.unique())
+
+
+
+if st.button('Can`t find your team?'):
+    #st.image(image_suck, caption=' ', use_column_width=True)
+    st.write('Contact us on e-mail: ')
+
+
+
+
+#Put mdropdown menu wuth teams
+df_teams = matches_info.radiant.unique()
+
+
+option1 = st.selectbox(
+    'Chouse team 1:',
+     df_teams)
+
+option2 = st.selectbox(
+    'Chouse team 2:',
+     df_teams)
+
+
+st.write(option1,'**Win probability is:**', win_probability(Rates[option1], Rates[option2]))
+#####################################################################################
+
+
 """
-Vp Win probability:
+Zhytomyr Dota users
 """
+map_data = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [50.25, 28.7],
+    columns=['lat', 'lon'])
 
-st.write(win_probability(Rates['VP 2'], Rates['EG']))
+st.map(map_data)
 
 
 
 """
-            ©2020 Dota4cast.com
+            ©2020 Dota4cast.com,
             All rights reserved
 """
 #df = pd.read_csv("data.csv")
 #st.line_chart(df)
-
-
 
 #Atl+shift+t to open terminal
