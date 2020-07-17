@@ -10,7 +10,7 @@ from trueskill.backends import cdf
 import io
 
 
-st.title('Dota4cast v.0.3 Beta')
+st.title('Dota4cast Beta')
 
 st.write("""
 Dota4cast is the key to protect gamblers and improve integrity
@@ -118,9 +118,7 @@ if st.button('Check all available teams for analisys'):
 
 if st.button('Can`t find your team?'):
     #st.image(image_suck, caption=' ', use_column_width=True)
-    st.write('Contact us on e-mail: ')
-
-
+    st.write('Contact us on e-mail: dcpgameing@gmail.com')
 
 
 #Put mdropdown menu wuth teams
@@ -149,10 +147,12 @@ map_data = pd.DataFrame(
 
 st.map(map_data)
 
-
+if st.button('Contact us ٩(◕‿◕｡)۶'):
+    #st.image(image_suck, caption=' ', use_column_width=True)
+    st.write('dcpgameing@gmail.com')
 
 """
-            ©2020 Dota4cast.com,
+            ©2020 www.dota4cast.ml
             All rights reserved
 """
 #df = pd.read_csv("data.csv")
