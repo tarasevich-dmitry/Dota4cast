@@ -38,7 +38,6 @@ Additional features:
 
 Some usefull links:
 - http://www.datdota.com/  - prof dota statistics 
-- https://dota.rgp.io/ - matchmaking stats
 - http://dotascience.com/  - hakaton for prediction dota 2 team winner (2017)
 - https://raygaming.com/   - our concurents, bets+predictions, some sneaky platform
 - https://docs.opendota.com/# - opendota API
