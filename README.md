@@ -42,7 +42,7 @@ Some usefull links:
 - https://raygaming.com/   - our concurents, bets+predictions, some sneaky platform
 - https://docs.opendota.com/# - opendota API
 - https://kouch.tv/streams  - some extention for twitch, build-in predictions
-- https://github.com/odota/dotaconstants - some repo?
+- https://github.com/odota/dotaconstants - some repo? Constant data for Dota 2 applications.
 - https://www.google.com/search?q=DOTABridge+Web&oq=DOTABridge+Web&aqs=chrome..69i57j0.6121j0j7&sourceid=chrome&ie=UTF-8 - ?
 - https://github.com/uin3566/Dota2Helper - some mobile app (china)
 - https://github.com/pissang/dota2hero - dota hero viewer? 
