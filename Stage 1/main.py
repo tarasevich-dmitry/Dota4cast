@@ -8,7 +8,10 @@ from math import sqrt, log, log2
 from trueskill import BETA
 from trueskill.backends import cdf
 import io
+import webbrowser
 
+#Here used unsafe function to set canonical url for google search, MAY BE REMOVED FROM STREAMLIT!!!
+st.write('<link rel="canonical" href="http://dota4cast.ml/" />',unsafe_allow_html=True)
 
 st.title('Dota4cast Beta')
 
@@ -17,7 +20,7 @@ Dota4cast is the key to protect gamblers and improve integrity
 """)
 
 
-image = Image.open('main_img.jpeg')
+image = Image.open('main_img.jpg')
 #image_suck = Image.open('tenor.gif')
 #image_suck=Image.open('tenor.gif').convert('RGB').save('new_tenor.gif')
 st.image(image, caption=' ', use_column_width=True)
@@ -52,15 +55,17 @@ df = pd.DataFrame({
 })
 
 df
-#chechbox to show
-if st.checkbox('Show dataframe'):
-    chart_data = pd.DataFrame(
-       np.random.randn(20, 3),
-       columns=['a', 'b', 'c'])
+#chechbox to show graphs
+#if st.checkbox('Show dataframe'):
+#    chart_data = pd.DataFrame(
+#       np.random.randn(20, 3),
+#       columns=['a', 'b', 'c'])
+#
+#    st.line_chart(chart_data)
 
-    st.line_chart(chart_data)
 
-
+#esports books: parimatch, cyberbet, betwinner,gg.bet, 1xbet,buff.bet, arcanebet, loot.bet, egb.com, Thunderpick, betway, bet365,
+#betspawn, pixel.bet, nitrogensports, betsafe, Williamhill.com, pinacle, Bovada, Bodog88
 
 
 #Put mmr widgets in a sidebar
@@ -138,22 +143,28 @@ st.write(option1,'**Win probability is:**', win_probability(Rates[option1], Rate
 #####################################################################################
 
 
-"""
-Zhytomyr Dota users
-"""
-map_data = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [50.25, 28.7],
-    columns=['lat', 'lon'])
+#"""
+#Zhytomyr Dota users
+#"""
+#map_data = pd.DataFrame(
+#    np.random.randn(1000, 2) / [50, 50] + [50.25, 28.7],
+#    columns=['lat', 'lon'])
 
-st.map(map_data)
+#st.map(map_data)
+
+
 
 if st.button('Contact us ٩(◕‿◕｡)۶'):
     #st.image(image_suck, caption=' ', use_column_width=True)
     st.write('dcpgameing@gmail.com')
 
+url_twitter = 'https://twitter.com/dota4cast'
+
+if st.button('(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ follow twitter'):
+    webbrowser.open_new_tab(url_twitter)
+
 """
-            ©2020 www.dota4cast.ml
-            All rights reserved
+            *Copyright © 2020 dota4cast. All Rights Reserved. Dota 2 is a registered trademark of Valve Corporation. All game images and names are property of Valve Corporation.*
 """
 #df = pd.read_csv("data.csv")
 #st.line_chart(df)
