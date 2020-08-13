@@ -47,8 +47,9 @@ Some usefull links:
 - https://github.com/uin3566/Dota2Helper - some mobile app (china)
 - https://github.com/pissang/dota2hero - dota hero viewer? 
 - https://github.com/andreiapostoae/dota2-predictor 
-- https://github.com/kevincon/dotaml - dotaml hero recomendation 
-- https://www.kaggle.com/c/dota-2-win-probability-prediction - kaggle win probability prediction
-- https://github.com/xzion/dota2-gsi dota stats integration
-- http://dota.polso.info/ ready web service of predictions 
-- https://pandascore.co/ esport data api
+
+Aslo check out our twitter:
+https://twitter.com/dota4cast
+
+Initial idea taken from:
+https://github.com/dotascience/dotascience-hackathon
