@@ -1,23 +1,18 @@
 # Dota4cast
 Dota 2 match result prediction, odds-making system  www.dota4cast.ml
 
-<h3> Basically predictions will consist of such parts: </h3>
+<h3> Predictions will consist of such parts: </h3>
 
   <summary><h4>Stage 1: Predictions based on team previous results </h4></summary>
  <br>
   
-- [ ]  Neural network trained on statistic in team professional performance. (Done v0.1)
+- [ ]  Neural network trained on results of professional teams performance. 
   
-Additional features:
 
-- [ ] Track each player separately, might be useful if roster changes, etc (TBD) 
-
-- [ ] Track 3rd party predictions from the channels, groups, noticeable analytics, compile them in one and compare with ours (TBD)  
 
 
 
 Some usefull links:
-- http://www.datdota.com/  - prof dota statistics 
 - http://dotascience.com/  - hakaton for prediction dota 2 team winner (2017)
 - https://raygaming.com/   - our concurents, bets+predictions, some sneaky platform
 - https://docs.opendota.com/# - opendota API
