@@ -8,7 +8,6 @@ from math import sqrt, log, log2
 from trueskill import BETA
 from trueskill.backends import cdf
 import io
-import webbrowser
 
 #Here used unsafe function to set canonical url for google search, MAY BE REMOVED FROM STREAMLIT!!!
 st.write('<link rel="canonical" href="http://dota4cast.ml/" />',unsafe_allow_html=True)
@@ -16,31 +15,27 @@ st.write('<link rel="canonical" href="http://dota4cast.ml/" />',unsafe_allow_htm
 st.title('Dota4cast Beta')
 
 st.write("""
-Dota4cast is the key to protect gamblers and improve integrity
+**Dota4cast.ml is a machine learning based platform that is building Dota 2 largest library of analytycal tools, odds predicting tools and data to make that information accessible and useful for all Dota players and researchers.**
 """)
 
-
 image = Image.open('main_img.jpg')
-#image_suck = Image.open('tenor.gif')
-#image_suck=Image.open('tenor.gif').convert('RGB').save('new_tenor.gif')
 st.image(image, caption=' ', use_column_width=True)
 
 """
-#  Welcome, bettor.
+#  Welcome.
 
 Year by year eSports betting is gaining popularity among bettors, and it is clear that bookmakers couldn’t stay aside from a such rapidly growing sports direction.
 
 One of the main advantages of betteors is that bookmaker analysts usually find it more difficult to place quotes in the events of eSports. Accordingly, the gambler has more chances to beat the bookie, if he is well versed in the chosen eSports discipline. However, this naturally applies to more “non-specialized” bookmakers.
 Another eSports benefit for bettors is that here team-outsiders win much more often than in other sports. Accordingly, it is quite difficult for bookmakers to predict these victories.
 
-Our solution will bring your betting experience on a new level, removing randomness from it.
+Our solution will bring your betting experience on a new level.
 
 
 History of eSports online gambling market (in bln $):
 """
-#From -  https://esportsentertainmentgroup.com/wp-content/uploads/2018/04/eSportsBetting-ThePastandFuturev3.pdf
 
-# Any time that Streamlit sees a variable or a liter    al value on its own line, it automatically writes that to your app using st.write().
+#From -  https://esportsentertainmentgroup.com/wp-content/uploads/2018/04/eSportsBetting-ThePastandFuturev3.pdf
 df = pd.DataFrame({
   '2009': [24.73],
   '2010': [27.58],
@@ -54,14 +49,14 @@ df = pd.DataFrame({
   '2018': [56.05]
 })
 
-df
+#df
+
 #chechbox to show graphs
-#if st.checkbox('Show dataframe'):
+if st.checkbox('Show dataframe'):
 #    chart_data = pd.DataFrame(
 #       np.random.randn(20, 3),
 #       columns=['a', 'b', 'c'])
-#
-#    st.line_chart(chart_data)
+    st.line_chart(df)
 
 
 #esports books: parimatch, cyberbet, betwinner,gg.bet, 1xbet,buff.bet, arcanebet, loot.bet, egb.com, Thunderpick, betway, bet365,
@@ -76,6 +71,7 @@ df_mmr = pd.DataFrame({
 option = st.sidebar.selectbox(
     'How much mmr do you have?',
      df_mmr['first column'])
+
 #appears on bottom:
 #'You selected:', option
 
@@ -115,14 +111,12 @@ def win_probability(player_rating, opponent_rating):
     return cdf(delta_mu / denom)
 
 
-
 if st.button('Check all available teams for analisys'):
     st.write(matches_info.radiant.unique())
 
 
-
 if st.button('Can`t find your team?'):
-    #st.image(image_suck, caption=' ', use_column_width=True)
+    #st.image(image_s, caption=' ', use_column_width=True)
     st.write('Contact us on e-mail: dcpgameing@gmail.com')
 
 
@@ -141,6 +135,8 @@ option2 = st.selectbox(
 
 st.write(option1,'**Win probability is:**', win_probability(Rates[option1], Rates[option2]))
 #####################################################################################
+
+
 
 
 #"""
@@ -164,8 +160,9 @@ if st.button('(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ follow twitter'):
     webbrowser.open_new_tab(url_twitter)
 
 """
-            *Copyright © 2020 dota4cast. All Rights Reserved. Dota 2 is a registered trademark of Valve Corporation. All game images and names are property of Valve Corporation.*
+            *Copyright © 2020 dota4cast.ml All Rights Reserved. Dota 2 is a registered trademark of Valve Corporation. All game images and names are property of Valve Corporation.*
 """
+
 #df = pd.read_csv("data.csv")
 #st.line_chart(df)
 
