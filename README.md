@@ -9,18 +9,17 @@ Dota 2 match result prediction, odds-making system  www.dota4cast.ml
 - [ ]  Neural network trained on results of professional teams performance. 
   
 
+---
+<h4>Data</h4>
+
+Initially data taken using [OpenDota](www.opendota.com) tools and API's
 
 
 
-Some usefull links:
-- http://dotascience.com/  - hakaton for prediction dota 2 team winner (2017)
-- https://github.com/odota/dotaconstants - some repo? Constant data for Dota 2 applications.
-- https://github.com/uin3566/Dota2Helper - some mobile app (china)
-- https://github.com/pissang/dota2hero - dota hero viewer? 
-- https://github.com/andreiapostoae/dota2-predictor 
 
-Aslo check out our twitter:
-https://twitter.com/dota4cast
+Aslo check out our [Twitter](twitter.com/dota4cast)
 
 Initial idea taken from:
 https://github.com/dotascience/dotascience-hackathon
+
+
