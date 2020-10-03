@@ -8,6 +8,10 @@ Dota 2 match result prediction, odds-making system  www.dota4cast.ml
   
 - [ ]  Neural network trained on results of professional teams performance. 
   
+--- 
+
+TODO add worlcloud, find jupyter notebook with code...
+
 
 ---
 <h4>Data</h4>
