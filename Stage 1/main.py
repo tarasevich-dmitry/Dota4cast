@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import time
+import webbrowser
 from PIL import Image
 import trueskill
 from math import sqrt, log, log2
@@ -10,12 +11,13 @@ from trueskill.backends import cdf
 import io
 
 #Here used unsafe function to set canonical url for google search, MAY BE REMOVED FROM STREAMLIT!!!
-st.write('<link rel="canonical" href="http://dota4cast.ml/" />',unsafe_allow_html=True)
+st.write('<link rel="canonical" href="http://www.dota4cast.ml/" />',unsafe_allow_html=True)
+
 
 st.title('Dota4cast Beta')
 
 st.write("""
-**Dota4cast.ml is a machine learning based platform that is building Dota 2 largest library of analytycal tools, odds predicting tools and data to make that information accessible and useful for all Dota players and researchers.**
+**Dota4cast.ml is a machine learning based platform that is building Dota 2 largest library of analytical tools, odds predicting tools and data to make that information accessible and useful for all Dota players and researchers.**
 """)
 
 image = Image.open('main_img.jpg')
@@ -49,7 +51,6 @@ df = pd.DataFrame({
   '2018': [56.05]
 })
 
-#df
 
 #chechbox to show graphs
 if st.checkbox('Show dataframe'):
@@ -57,10 +58,6 @@ if st.checkbox('Show dataframe'):
 #       np.random.randn(20, 3),
 #       columns=['a', 'b', 'c'])
     st.line_chart(df)
-
-
-#esports books: parimatch, cyberbet, betwinner,gg.bet, 1xbet,buff.bet, arcanebet, loot.bet, egb.com, Thunderpick, betway, bet365,
-#betspawn, pixel.bet, nitrogensports, betsafe, Williamhill.com, pinacle, Bovada, Bodog88
 
 
 #Put mmr widgets in a sidebar
@@ -117,7 +114,7 @@ if st.button('Check all available teams for analisys'):
 
 if st.button('Can`t find your team?'):
     #st.image(image_s, caption=' ', use_column_width=True)
-    st.write('Contact us on e-mail: dcpgameing@gmail.com')
+    st.write('Contact us on e-mail: dota4cast@gmail.com')
 
 
 #Put mdropdown menu wuth teams
@@ -152,7 +149,7 @@ st.write(option1,'**Win probability is:**', win_probability(Rates[option1], Rate
 
 if st.button('Contact us ٩(◕‿◕｡)۶'):
     #st.image(image_suck, caption=' ', use_column_width=True)
-    st.write('dcpgameing@gmail.com')
+    st.write('dota4cast@gmail.com')
 
 url_twitter = 'https://twitter.com/dota4cast'
 
@@ -163,7 +160,14 @@ if st.button('(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ follow twitter'):
             *Copyright © 2020 dota4cast.ml All Rights Reserved. Dota 2 is a registered trademark of Valve Corporation. All game images and names are property of Valve Corporation.*
 """
 
+
+#xD
+st.balloons()
+
+
+
 #df = pd.read_csv("data.csv")
 #st.line_chart(df)
 
 #Atl+shift+t to open terminal
+#streamlit run main.py
