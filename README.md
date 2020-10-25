@@ -10,8 +10,9 @@ Dota 2 match result prediction, odds-making system  www.dota4cast.ml
   
 --- 
 
-TODO add worlcloud, find jupyter notebook with code...
+TODO  find jupyter notebook with code...
 
+Find Dota 2 word chat cloud in [Google Colab](https://colab.research.google.com/drive/11bQpWGrzySjMsiIRCwkUPVzZUvMbkkN1?usp=sharing)
 
 ---
 <h4>Data</h4>
