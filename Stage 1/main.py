@@ -135,16 +135,37 @@ st.write(option1,'**Win probability is:**', win_probability(Rates[option1], Rate
 
 
 
-
+###################################################################################
+#map
 """
-Zhytomyr Dota users
+
+**Tier 1 Tournaments map**
 """
-map_data = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [50.25, 28.7],
-    columns=['lat', 'lon'])
 
-st.map(map_data)
+map_data=pd.read_csv('map_coords.csv')
 
+
+# Adding code so we can have map default to the center of the data
+midpoint = (np.average(map_data['latitude']), np.average(map_data['longitude']))
+
+st.deck_gl_chart(
+            viewport={
+                'latitude': midpoint[0],
+                'longitude':  midpoint[1],
+                'zoom': 1
+            },
+            layers=[{
+                'type': 'ScatterplotLayer',
+                'data': map_data,
+                'radiusScale': 250,
+   'radiusMinPixels': 4,
+                'getFillColor': [248, 24, 148],
+            }]
+        )
+"""
+Tier 1 Tournaments is typically tournaments with an outstanding prize pool, as a rule played offline, and feature the best world teams. They are commonly held by well-established franchises or Valve, considered especially prestigious amongst the community.
+"""
+###################################################################################
 
 
 if st.button('Contact us ٩(◕‿◕｡)۶'):
