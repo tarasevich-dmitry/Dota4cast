@@ -136,14 +136,14 @@ st.write(option1,'**Win probability is:**', win_probability(Rates[option1], Rate
 
 
 
-#"""
-#Zhytomyr Dota users
-#"""
-#map_data = pd.DataFrame(
-#    np.random.randn(1000, 2) / [50, 50] + [50.25, 28.7],
-#    columns=['lat', 'lon'])
+"""
+Zhytomyr Dota users
+"""
+map_data = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [50.25, 28.7],
+    columns=['lat', 'lon'])
 
-#st.map(map_data)
+st.map(map_data)
 
 
 
