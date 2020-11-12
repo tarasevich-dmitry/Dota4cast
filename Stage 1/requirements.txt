@@ -11,6 +11,7 @@ matplotlib>=1.4.3
 pandas>=0.19
 flasgger==0.9.4
 trueskill>=0.4
+joblib>=0.17.0
 streamlit
 
 
