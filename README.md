@@ -1,3 +1,7 @@
+[![Github All Releases](https://img.shields.io/github/downloads/tarasevich-dmitry/Dota4cast/total.svg)]()
+
+
+
 # Dota4cast
 Dota 2 Esports analytics web app. Build with [Streamlit](https://www.streamlit.io/), deployed with [Heroku](https://www.heroku.com/)
 
