@@ -1,7 +1,10 @@
 # Dota4cast
-Dota 2 Esports analytics web app. Build with [Streamlit](https://www.streamlit.io/) Deployed with [Heroku](https://www.heroku.com/)
+Dota 2 Esports analytics web app. Build with [Streamlit](https://www.streamlit.io/), deployed with [Heroku](https://www.heroku.com/)
 
 Check it online www.dota4cast.ml
+
+![Alt Text](https://github.com/tarasevich-dmitry/Dota4cast/blob/master/images/demo.gif)
+
 
 <h3> Predictions will consist of such parts: </h3>
 
