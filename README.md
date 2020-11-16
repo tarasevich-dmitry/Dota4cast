@@ -11,7 +11,7 @@ Check it online www.dota4cast.ml
   <summary><h4>Predictions based on team previous results </h4></summary>
  <br>
   
-  Neural network trained on results of professional teams performance. 
+  Build on results of professional teams performance. 
   
 --- 
 <h4>Dota 2 word chat cloud</h4>
