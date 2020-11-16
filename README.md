@@ -14,15 +14,17 @@ Check it online www.dota4cast.ml
 - [ ]  Neural network trained on results of professional teams performance. 
   
 --- 
-Wordcloud
+<h4>Dota 2 word chat cloud</h4>
 
-TODO  find jupyter notebook with code...
+We construct a word cloud to determine the frequency and flavour of the most common words. We get data from in-game all-chat.
 
-Find Dota 2 word chat cloud in [Google Colab](https://colab.research.google.com/drive/11bQpWGrzySjMsiIRCwkUPVzZUvMbkkN1?usp=sharing)
+Run it online in [Google Colab](https://colab.research.google.com/drive/11bQpWGrzySjMsiIRCwkUPVzZUvMbkkN1?usp=sharing)
 
 ---
-Tir 1 map
-...
+<h4>Dota Tir 1 Tournaments map</h4>
+
+In tournaments_map`dota_map_parser.py` is a parser that takes data from [Liquipedia](https://liquipedia.net/dota2/Tier_1_Tournaments) using Beautifulsoup
+and then geopy to translate locations to latitude & longitude, final map drawn in streamlit. 
 
 ---
 <h4>Data</h4>
