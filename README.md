@@ -34,3 +34,11 @@ Initially data taken using [OpenDota](www.opendota.com) tools and API's
 Aslo check out our [Twitter](twitter.com/dota4cast)
 
 
+<h4>Credits</h4>
+
+[Streamlit](https://github.com/streamlit/streamlit)
+
+[Dotascience](https://github.com/dotascience/dotascience-hackathon)
+
+[renanmav](https://www.kaggle.com/renanmav/dota-2-game-prediction)
+
