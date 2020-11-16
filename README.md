@@ -14,18 +14,22 @@ Check it online www.dota4cast.ml
 - [ ]  Neural network trained on results of professional teams performance. 
   
 --- 
+Wordcloud
 
 TODO  find jupyter notebook with code...
 
 Find Dota 2 word chat cloud in [Google Colab](https://colab.research.google.com/drive/11bQpWGrzySjMsiIRCwkUPVzZUvMbkkN1?usp=sharing)
 
 ---
+Tir 1 map
+...
+
+---
 <h4>Data</h4>
 
+TBD
+
 Initially data taken using [OpenDota](www.opendota.com) tools and API's
-
-
-
 
 Aslo check out our [Twitter](twitter.com/dota4cast)
 
