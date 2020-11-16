@@ -6,12 +6,12 @@ Check it online www.dota4cast.ml
 ![Alt Text](https://github.com/tarasevich-dmitry/Dota4cast/blob/master/images/demo.gif)
 
 
-<h3> Predictions will consist of such parts: </h3>
+<h3> Team winrate prediction: </h3>
 
-  <summary><h4>Stage 1: Predictions based on team previous results </h4></summary>
+  <summary><h4>Predictions based on team previous results </h4></summary>
  <br>
   
-- [ ]  Neural network trained on results of professional teams performance. 
+  Neural network trained on results of professional teams performance. 
   
 --- 
 <h4>Dota 2 word chat cloud</h4>
