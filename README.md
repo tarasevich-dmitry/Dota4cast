@@ -12,9 +12,25 @@ Check it online www.dota4cast.ml
  <br>
   
   Build on results of professional teams performance. 
-  
+ 
+ 
+---
+<h3> Quickstart </h3> 
+Ensure you have requirements. The project requires a handful of python 3 packages, you can install it with
+
+```
+cd app
+pip install -r requirements.txt
+```
+
+Then to run app locally:
+
+```
+streamlit run dota4cast.py
+```
 --- 
 <h4>Dota 2 word chat cloud</h4>
+
 
 We construct a word cloud to determine the frequency and flavour of the most common words. We get data from in-game all-chat.
 
@@ -22,6 +38,8 @@ Run it online in [Google Colab](https://colab.research.google.com/drive/11bQpWGr
 
 ---
 <h4>Dota Tir 1 Tournaments map</h4>
+
+![Alt Text](https://github.com/tarasevich-dmitry/Dota4cast/blob/master/app/map_tir1.png)
 
 In tournaments_map`dota_map_parser.py` is a parser that takes data from [Liquipedia](https://liquipedia.net/dota2/Tier_1_Tournaments) using Beautifulsoup
 and then geopy to translate locations to latitude & longitude, final map drawn in streamlit. 
