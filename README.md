@@ -1,5 +1,7 @@
 # Dota4cast
-Dota 2 match result prediction, odds-making system  www.dota4cast.ml
+Dota 2 Esports analytics web app. Build with [Streamlit](https://www.streamlit.io/) Deployed with [Heroku](https://www.heroku.com/)
+
+Check it online www.dota4cast.ml
 
 <h3> Predictions will consist of such parts: </h3>
 
@@ -23,8 +25,5 @@ Initially data taken using [OpenDota](www.opendota.com) tools and API's
 
 
 Aslo check out our [Twitter](twitter.com/dota4cast)
-
-Initial idea taken from:
-https://github.com/dotascience/dotascience-hackathon
 
 
