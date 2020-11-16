@@ -8,7 +8,7 @@ Check it online www.dota4cast.ml
 
 <h3> Team winrate prediction: </h3>
 
-  <summary><h4>Predictions based on team previous results </h4></summary>
+  <summary>Predictions based on team previous results</summary>
  <br>
   
   Build on results of professional teams performance. 
