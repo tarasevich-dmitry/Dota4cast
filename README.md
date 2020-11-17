@@ -18,7 +18,7 @@ Check it online www.dota4cast.ml
   <summary>Predictions based on team previous results</summary>
  <br>
   
-  Build on results of professional teams performance. 
+  Build on results of professional teams performance with TrueSkill algorithm 
  
  
 ---
