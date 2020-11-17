@@ -13,15 +13,7 @@ Check it online www.dota4cast.ml
 ![Alt Text](https://github.com/tarasevich-dmitry/Dota4cast/blob/master/images/demo.gif)
 
 
-<h3> Team winrate prediction: </h3>
 
-  <summary>Predictions based on team previous results</summary>
- <br>
-  
-  Build on results of professional teams performance with TrueSkill algorithm 
- 
- 
----
 <h3> Quickstart </h3> 
 Ensure you have requirements. The project requires a handful of python 3 packages, you can install it with
 
@@ -35,6 +27,18 @@ Then to run app locally:
 ```
 streamlit run dota4cast.py
 ```
+
+---
+
+<h3> Team winrate prediction: </h3>
+
+  <summary>Predictions based on team previous results</summary>
+ <br>
+  
+ Build on results of professional teams performance with TrueSkill algorithm 
+ 
+ Pick winrate ML prediction is in `dota-2-winner-prediction-on-picks-SGDClassifier.ipynb` but it is not ready for production yet 
+ 
 --- 
 <h4>Dota 2 word chat cloud</h4>
 
@@ -54,9 +58,11 @@ and then geopy to translate locations to latitude & longitude, final map drawn i
 ---
 <h4>Data</h4>
 
-TBD
+Data stored in app and data forlders, however some sorces are quite big and its not possible to load them on github.
+Also we dont have automated scrappers for all data sources, if you want to help feel free to contribute and improve it!
 
 Initially data taken using [OpenDota](www.opendota.com) tools and API's
+
 
 Aslo check out our [Twitter](twitter.com/dota4cast)
 
