@@ -15,7 +15,13 @@ Check it online www.dota4cast.ml
 
 
 <h3> Quickstart </h3> 
-Ensure you have requirements. The project requires a handful of python 3 packages, you can install it with
+
+Download:
+```
+git clone https://github.com/tarasevich-dmitry/Dota4cast.git
+```
+
+Ensure you have requirements. The project requires a handful of python 3 packages, you can install it with PiP
 
 ```
 cd app
