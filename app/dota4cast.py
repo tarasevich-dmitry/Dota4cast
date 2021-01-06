@@ -34,6 +34,8 @@ def main():
     #Here used unsafe function to set canonical url for google search, MAY BE REMOVED FROM STREAMLIT!!!
     st.write('<link rel="canonical" href="http://www.dota4cast.ml/" />',unsafe_allow_html=True)
 
+    st.beta_set_page_config(page_title='Dota4cast')
+
     st.title('Dota4cast Beta')
 
     st.write("""
