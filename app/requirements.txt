@@ -1,19 +1,19 @@
-Flask==1.1.1
-gunicorn==19.9.0
-itsdangerous==1.1.0
-Jinja2==2.11.3
-MarkupSafe==1.1.1
-Werkzeug==0.15.5
+Flask>=1.1.1
+gunicorn>=19.9.0
+itsdangerous>=1.1.0
+Jinja2>=2.11.3
+MarkupSafe>=1.1.1
+Werkzeug>=0.15.5
 numpy>=1.9.2
 scipy>=0.15.1
-scikit-learn==0.22.1
+scikit-learn>=0.22.1
 matplotlib>=1.4.3
 pandas>=0.19
-flasgger==0.9.4
+flasgger>=0.9.4
 trueskill>=0.4
 joblib>=0.17.0
 pydeck>=0.5.0
-streamlit>=0.68
+streamlit>=0.86
 
 
 
