@@ -14,9 +14,10 @@
 # limitations under the License.
 #
 # More info: https://github.com/tarasevich-dmitry/Dota4cast
-# Copyright 2020 dota4cast Inc.
+# Copyright 2021 dota4cast Inc.
 
 import streamlit as st
+from streamlit_disqus import st_disqus
 import pandas as pd
 import numpy as np
 import time
@@ -34,7 +35,7 @@ def main():
     #Here used unsafe function to set canonical url for google search, MAY BE REMOVED FROM STREAMLIT!!!
     st.write('<link rel="canonical" href="http://www.dota4cast.ml/" />',unsafe_allow_html=True)
 
-    st.beta_set_page_config(page_title='Dota4cast')
+    #st.beta_set_page_config(page_title='Dota4cast')
 
     st.title('Dota4cast Beta')
 
@@ -187,11 +188,11 @@ def main():
 #    **Pick win prediction:**
 #    """
 
-    clf = load('f_model.joblib')
+    #clf = load('f_model.joblib')
     #load hero list:
-    heroes=pd.read_csv('hero_names.txt')
+    #heroes=pd.read_csv('hero_names.txt')
 
-    df_heroes = heroes.Sven.unique()
+    #df_heroes = heroes.Sven.unique()
 
 
     #col1, col2 = st.beta_columns(2)
@@ -223,12 +224,16 @@ def main():
         st.write('https://twitter.com/dota4cast')
         #webbrowser.open_new_tab(url_twitter)
 
+
+    st_disqus("streamlit-disqus-demo")
+
     """
-                *Copyright © 2020 dota4cast.ml All Rights Reserved. Dota 2 is a registered trademark of Valve Corporation. All game images and names are property of Valve Corporation.*
+                *Copyright © 2021 dota4cast.ml All Rights Reserved. Dota 2 is a registered trademark of Valve Corporation. All game images and names are property of Valve Corporation.*
     """
 
     #rofl ballons animation
     st.balloons()
+
 
 if __name__ == "__main__":
     main()
