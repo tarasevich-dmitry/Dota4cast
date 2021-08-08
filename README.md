@@ -24,7 +24,7 @@ git clone https://github.com/tarasevich-dmitry/Dota4cast.git
 Ensure you have requirements. The project requires a handful of python 3 packages, you can install it with PiP
 
 ```
-cd app
+cd Dota4cast/app/
 pip install -r requirements.txt
 ```
 
