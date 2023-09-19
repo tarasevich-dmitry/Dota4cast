@@ -1,4 +1,4 @@
-  [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/tarasevich-dmitry/Dota4cast/graphs/commit-activity) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://www.dota4cast.ml/) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+  [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://GitHub.com/tarasevich-dmitry/Dota4cast/graphs/commit-activity) [![Website shields.io](https://img.shields.io/website-down-up-red-green/http/shields.io.svg)](http://www.dota4cast.ml/) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
 
 
